@@ -22,8 +22,6 @@ pipeline {
           rm -rf build
           mkdir build
           cp lambda_handler.py build/
-          # if you need pip deps uncomment following line:
-          # pip3 install -r requirements.txt -t build/
           cd build
           zip -r ../${ZIP_NAME} .
           cd ..
